@@ -18,6 +18,7 @@ const dropDown = () => {
       offerDropdown.classList.add("invisible");
       offerDropdown.classList.add("opacity-0");
       offerDropdown.classList.add("h-0");
+      offerDropdown.classList.remove("h-20");
     }
   });
 };

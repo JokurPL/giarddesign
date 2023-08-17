@@ -206,15 +206,19 @@
       id="intro"
     >
       <div class="p-20 w-full">
-        <h1 class="lg:text-6xl md:text-4xl text-left">
-          Nowoczesna aranżacja <br />Twojego ogrodu
+        <h1
+          class="lg:text-6xl md:text-4xl lg:leading-[70px] text-left font-medium"
+        >
+          Nowoczesna <br />aranżacja <br />Twojego ogrodu
         </h1>
-        <p class="mt-10 w-3/4 text-left text-lg leading-normal font-['Inter']">
+        <p
+          class="mt-11 w-[462px] text-left text-[16px] leading-[150%] font-['Inter']"
+        >
           Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
           realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
           podejściem do każdego projektu.
         </p>
-        <div class="flex font-['Inter'] items-center mt-32 space-x-10">
+        <div class="flex font-['Inter'] items-center mt-20 space-x-10">
           <div>
             <a
               class="bg-project-green py-3 px-4 border-transparent text-project-button-text rounded-full hover:cursor-pointer hover:bg-transparent border hover:border-project-green hover:text-project-green transition-all"
@@ -285,20 +289,94 @@
     </section>
 
     <section
-      class="flex items-center justify-center h-screen text-project-black bg-[#F5F0EC]"
+      class="flex font-[Inter] p-24 flex-col items-center h-screen text-project-black bg-[#F5F0EC]"
       id="offer-section"
     >
-      <div>
-        <p>Oferta</p>
-        <h2>Działamy kompleksowo</h2>
-        <p>
+      <div class="w-4/6">
+        <p class="text-project-green">Oferta</p>
+        <h2 class="text-5xl mt-5 font-medium">
+          Działamy <span class="italic">kompleksowo</span>
+        </h2>
+        <p class="mt-6 text-lg">
           Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
           nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla
           Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
           etapie posłużymy radą i wieloletnim doświadczeniem.
         </p>
       </div>
+      <div class="flex items-start gap-16 flex-col lg:flex-row mt-16">
+        <div class="py-10 px-9 w-96 bg-white rounded-3xl">
+          <img src="../public/images/icon-projects.svg" alt="Ikona projektów" />
+          <p
+            class="font-display font-medium tracking-tighter text-2xl mt-5 leading-tight"
+          >
+            Projekty
+          </p>
+          <p class="mt-3 leading-4 text-sm">
+            Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+            wykorzystaniem istniejącej przestrzeni.
+          </p>
+          <p
+            class="relative flex z-10 space-x-3 items-center cursor-pointer text-project-green mt-10 before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-44 before:h-[1px] before:bg-project-green before:transition-all hover:translate-x-2 transition-all"
+          >
+            <span>Dowiedz się więcej</span>
+            <img
+              src="../public/images/right-arrow.svg"
+              alt="Strzałka w prawo"
+            />
+          </p>
+        </div>
+        <div class="py-10 px-9 w-96 bg-white rounded-3xl">
+          <img
+            src="../public/images/icon-visualizations.svg"
+            alt="Ikona wizualizacji"
+          />
+          <p
+            class="font-display font-medium tracking-tighter text-2xl mt-5 leading-tight"
+          >
+            Wizualizacje
+          </p>
+          <p class="mt-3 leading-4 text-sm">
+            Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
+            animowanego w technologii 3D.
+          </p>
+          <p
+            class="relative flex z-10 space-x-3 items-center cursor-pointer text-project-green mt-10 before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-44 before:h-[1px] before:bg-project-green before:transition-all hover:translate-x-2 transition-all"
+          >
+            <span>Dowiedz się więcej</span>
+            <img
+              src="../public/images/right-arrow.svg"
+              alt="Strzałka w prawo"
+            />
+          </p>
+        </div>
+        <div class="py-10 px-9 w-96 bg-white rounded-3xl">
+          <img
+            src="../public/images/icon-realizations.svg"
+            alt="Ikona realizacji"
+          />
+          <p
+            class="font-display font-medium tracking-tighter text-2xl mt-5 leading-tight"
+          >
+            Realizacje
+          </p>
+          <p class="mt-3 leading-4 text-sm">
+            Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+            zaawansowanych technologii.
+          </p>
+          <p
+            class="relative flex z-10 space-x-3 items-center cursor-pointer text-project-green mt-10 before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-44 before:h-[1px] before:bg-project-green before:transition-all hover:translate-x-2 transition-all"
+          >
+            <span>Dowiedz się więcej</span>
+            <img
+              src="../public/images/right-arrow.svg"
+              alt="Strzałka w prawo"
+            />
+          </p>
+        </div>
+      </div>
     </section>
+
     <script src="index.js"></script>
   </body>
 </html>
