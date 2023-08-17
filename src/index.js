@@ -19,11 +19,15 @@ const dropDown = (hoverItem, dropdown) => {
 
 const searchIcon = document.getElementById("search-icon");
 const searchBar = document.getElementById("search-bar");
+
 const search = (searchIcon, searchBar) => {
   searchIcon.addEventListener("click", () => {
-    searchBar.classList.remove("hidden");
-
+    searchBar.classList.remove("invisible");
+    searchBar.classList.remove("w-0");
+    searchBar.classList.remove("delay-0");
     searchBar.classList.remove("opacity-0");
+    searchBar.classList.add("delay-300");
+    searchBar.classList.add("opacity-100");
   });
 };
 
