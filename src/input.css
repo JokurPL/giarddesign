@@ -5,22 +5,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
 ::-webkit-scrollbar {
-  width: 0.6em;
+  width: 0.8em;
 }
 
-/* Track */
+#project-container img {
+  z-index: -9999;
+}
+
 ::-webkit-scrollbar-track {
   background: #e6e3e3;
+  border-left: 3px solid #c3a48a;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #dcc1ab;
+  border-left: 3px solid #c3a48a;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #c3a48a;
 }
