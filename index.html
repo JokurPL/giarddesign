@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link href="/output.css" rel="stylesheet" /> -->
   </head>
   <body>
     <div
@@ -218,16 +219,18 @@
     </nav>
 
     <section
-      class="flex w-screen lg:w-auto lg:flex-row flex-col items-center justify-center lg:h-screen bg-project-beige text-project-black"
+      class="flex transition-all eas w-screen lg:w-auto lg:flex-row flex-col items-center justify-center lg:h-screen bg-project-beige text-project-black"
       id="intro"
     >
       <div class="p-20 w-full">
         <h1
           class="lg:text-6xl text-4xl lg:leading-[70px] lg:text-left text-center font-medium"
+          id="slider-header"
         >
           Nowoczesna <br />aranżacja <br />Twojego ogrodu
         </h1>
         <p
+          id="slider-desc"
           class="mt-11 lg:w-[462px] w-fit lg:text-left text-center text-[16px] leading-[150%] font-['Inter']"
         >
           Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
@@ -265,8 +268,14 @@
           </div>
         </div>
       </div>
-      <div id="image" class="relative overflow-hidden h-full w-full">
-        <img class="object-cover" src="../public/images/slider-1.png" alt="" />
+      <div class="relative overflow-hidden h-full w-full">
+        <img
+          id="slider-image"
+          class="object-cover overflow-hidden w-full h-full"
+          src="../public/images/slider/slider-1.png"
+          alt="Zdjęcie ogrodu"
+        />
+        <span id="slider-img-copyright" class="hidden"></span>
         <div class="absolute bottom-0 right-0 flex items-center justify-center">
           <div
             id="left-arrow"
@@ -783,8 +792,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
-    <script src="js/index.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/navbar.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/gallery.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
 </html>
