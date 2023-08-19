@@ -13,12 +13,12 @@ const data = [
     id: 0,
     header: "Nowoczesna \n aranżacja \n Twojego ogrodu",
     desc: "Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.",
-    img: "slider-1.png",
+    img: "slider-1.jpg",
     alt: "Zdjęcie ogrodu",
   },
   {
     id: 1,
-    header: "Sed congue \n erat rutrum",
+    header: "Congue \n egestas \n rutrum dictum",
     desc: "Suspendisse ac convallis, laoreet nisi dictum, semper dolor. Nullam vel egestas sem. Curabitur ac pharetra nisi. Fusce quis faucibus turpis, eget porttitor enim.",
     img: "slider-2.jpg",
     copyright:
@@ -27,8 +27,8 @@ const data = [
   },
   {
     id: 2,
-    header: "Vestibulum \n ante ipsum",
-    desc: "Cras sollicitudin molestie mauris, in vestibulum ex consequat ac. Nunc tincidunt velit lectus, pretium aliquam mauris condimentum in. Ut egestas odio purus, non rhoncus orci luctus non. Phasellus posuere pellentesque orci, quis dictum lorem placerat ac.",
+    header: "Vestibulum \n aliquam \n pharetra nisi",
+    desc: "Cras sollicitudin molestie mauris, in vestibulum ex consequat ac. Nunc tincidunt velit lectus, pretium aliquam mauris condimentum in. Ut egestas odio purus, enim.",
     img: "slider-3.jpg",
     alt: "Zdjęcie natury w słoiku",
     copyright:
