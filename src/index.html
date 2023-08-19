@@ -232,7 +232,7 @@
           <div class="lg:mt-0 mt-8">
             <a
               class="flex lg:flex-row flex-col font-normal py-3 px-4 justify-center items-center bg-transparent border border-project-green text-project-green rounded-full hover:cursor-pointer hover:bg-opacity-90 transition-all hover:bg-project-green hover:text-project-button-text"
-              href="javascript: scrollTo('projects-section')"
+              href="javascript: scrollToSection('projects-section')"
               >Zobacz nasze realizacje
               <svg
                 class="ml-2"
@@ -391,7 +391,7 @@
 
     <section
       class="flex lg:flex-row flex-col lg:text-left text-center items-center lg:gap-16 font-[Inter] justify-center lg:h-screen bg-project-green text-[#F5F0EC]"
-      id="intro"
+      id="about-company"
     >
       <div id="image" class="relative overflow-hidden h-full w-full">
         <img class="object-cover" src="../public/images/company.png" alt="" />
@@ -442,46 +442,50 @@
       </div>
       <div
         id="projects-container"
-        class="w-full relative transition-all opacity-0 duration-500 before:bg-gradient-to-t z-0 before:z-10 before:from-project-beige before:content-[''] before:absolute before:w-full before:h-[1000px] before:bottom-0"
+        class="w-full overflow-hidden !transition-[max-height] !duration-[1500ms] max-h-[85rem] relative opacity-0 before:bg-gradient-to-t z-0 before:z-10 before:from-project-beige before:content-[''] before:absolute before:w-full before:h-[1000px] before:bottom-0"
       >
         <img
-          src="../public/images/projects-img-2.jpg"
+          src="../public/images/projects/Photo-1.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects-img-1.jpg"
+          src="../public/images/projects/Photo-2.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects-img-4.jpg"
+          src="../public/images/projects/Photo-3.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects-img-6.jpg"
-          alt="Zdjęcie zrealizowanego projektu"
-        />
-        <img
-          src="../public/images/projects-img-5.jpg"
-          alt="Zdjęcie zrealizowanego projektu"
-        />
-        <img
-          src="../public/images/projects-img-3.jpg"
+          src="../public/images/projects/Photo-4.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects-img-7.jpg"
+          src="../public/images/projects/Photo-5.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
+
         <img
-          src="../public/images/projects-img-8.jpg"
+          src="../public/images/projects/Photo-6.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
+
         <img
-          src="../public/images/projects-img-9.jpg"
+          src="../public/images/projects/Photo-7.png"
+          alt="Zdjęcie zrealizowanego projektu"
+        />
+
+        <img
+          src="../public/images/projects/Photo-8.png"
+          alt="Zdjęcie zrealizowanego projektu"
+        />
+
+        <img
+          src="../public/images/projects/Photo-9.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
       </div>
@@ -492,8 +496,49 @@
         <img
           class="img-popup max-w-full rounded-sm object-scale-down max-h-full m-10 border-8"
           src="../public/images/projects-img-9.jpg"
-          alt="Zdjęcie zrealizowaneg projektu"
+          alt="Zdjęcie zrealizowanego projektu"
         />
+      </div>
+      <div class="p-10">
+        <button
+          id="more-photos-button"
+          class="hover:bg-project-green ease-linear duration-500 hover:!duration-300 hover:border-project-green hover:text-white transition-all flex border-project-black text-project-black border items-center justify-center mx-auto py-3 px-[22px] rounded-full"
+        >
+          <p>Rozwiń</p>
+          <svg
+            class="ml-2"
+            width="16"
+            height="17"
+            viewBox="0 0 16 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <button
+          onclick='scrollToSection("projects-section")'
+          id="less-photos-button"
+          class="invisible opacity-0 ease-linear hover:duration-300 duration-500 h-0 hover:bg-project-green hover:border-project-green hover:text-white transition-all flex border-project-black text-project-black border items-center justify-center mx-auto py-3 px-[22px] rounded-full"
+        >
+          <p>Zwiń</p>
+          <svg
+            class="ml-2 rotate-180"
+            width="16"
+            height="17"
+            viewBox="0 0 16 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
       </div>
     </section>
 
@@ -724,6 +769,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
