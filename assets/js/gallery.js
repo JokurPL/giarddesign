@@ -7,14 +7,15 @@ const getRandomInt = (min, max) => {
 const gallery = (containerId) => {
   const container = document.getElementById(containerId);
   const popup = document.getElementById("gallery-popup");
-  // Add fakes images
-  for (let i = 0; i < 10; i++) {
-    let fakeImg = document.createElement("img");
-    let randomWidth = getRandomInt(600, 1080);
-    let randomHeight = getRandomInt(600, 1080);
-    fakeImg.src = `https://loremflickr.com/${randomWidth}/${randomHeight}/nature`;
-    fakeImg.alt = "Zdjęcie zrealizowanego projektu";
-    container.appendChild(fakeImg);
+
+  // Insert images
+  for (let i = 1; i < 18; i++) {
+    let projectImage = document.createElement("img");
+    projectImage.src = `./assets/img/projects/Photo-${i}.${
+      i < 10 ? "png" : "jpg"
+    }`;
+    projectImage.alt = "Zdjęcie zrealizowanego projektu";
+    container.appendChild(projectImage);
   }
 
   const images = container.querySelectorAll("img");
