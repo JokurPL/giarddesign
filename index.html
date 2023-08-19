@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./assets/css/build.css" rel="stylesheet" />
+    <!-- <link href="./assets/css/build.css" rel="stylesheet" /> -->
+    <link href="./dist/output.css" rel="stylesheet" />
     <title>GiardDesign</title>
     <meta
       name="description"
@@ -62,14 +63,14 @@
 
     <nav class="text-project-black">
       <div
-        class="mx-auto lg:px-32 lg:max-w-full text-xl p-5 hover:cursor-pointer"
+        class="mx-auto xl:px-32 xl:max-w-full text-xl p-5 hover:cursor-pointer"
       >
         <div
-          class="flex justify-between items-center text-center flex-col lg:flex-row lg:text-left"
+          class="flex justify-between items-center text-center flex-col xl:flex-row xl:text-left"
         >
-          <div class="w-screen lg:flex">
+          <div class="w-screen xl:flex">
             <div
-              class="flex items-center justify-around lg:justify-between space-x-2"
+              class="flex items-center justify-around xl:justify-between space-x-2"
             >
               <svg
                 width="115"
@@ -125,7 +126,7 @@
               </svg>
               <svg
                 id="menu-icon"
-                class="lg:hidden"
+                class="xl:hidden"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 width="40"
@@ -156,11 +157,11 @@
           </div>
           <div
             id="menu-content"
-            class="flex flex-col items-center w-full overflow-hidden lg:overflow-visible lg:transition-all transition-[max-height] ease-in-out max-h-0 lg:max-h-fit duration-[600ms] invisible lg:h-full lg:visible lg:flex-row lg:space-x-10"
+            class="flex flex-col justify-end items-center w-full overflow-hidden xl:overflow-visible xl:transition-all transition-[max-height] ease-in-out max-h-0 xl:max-h-fit duration-[600ms] invisible xl:h-full xl:visible xl:flex-row xl:space-x-10"
           >
             <div
               id="offer-nav-item"
-              class="relative p-2 w-screen lg:w-auto transition-all before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
+              class="relative p-2 w-screen xl:w-auto transition-all before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
             >
               <a
                 id="offer-nav-link"
@@ -185,7 +186,7 @@
               </a>
               <div
                 id="offer-dropdown"
-                class="max-h-20 lg:z-10 lg:mt-2 border-t delay-300 duration-500 h-0 lg:absolute lg:-ml-2 transition-all flex flex-col text-center w-full invisible opacity-0 bg-white text-base"
+                class="max-h-20 xl:z-10 xl:mt-2 border-t delay-300 duration-500 h-0 xl:absolute xl:-ml-2 transition-all flex flex-col text-center w-full invisible opacity-0 bg-white text-base"
               >
                 <a href="#">
                   <div
@@ -205,31 +206,31 @@
             </div>
             <a
               href="javascript: scrollToSection('about-company')"
-              class="p-2 w-screen lg:w-auto lg:min-w-fit relative transition-all before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
+              class="p-2 w-screen xl:w-auto xl:min-w-fit relative transition-all before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
             >
               O firmie
             </a>
             <a
               href="javascript: scrollToSection('projects-section')"
-              class="p-2 w-screen lg:w-auto relative transition-all before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
+              class="p-2 w-screen xl:w-auto relative transition-all before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
             >
               Realizacje
             </a>
             <a
               href="javascript: scrollToSection('instagram-section')"
-              class="p-2 w-screen lg:w-auto relative transition-all before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
+              class="p-2 w-screen xl:w-auto relative transition-all before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
             >
               Kontakt
             </a>
             <div
-              class="focus:outline-[#DCC1AB] p-2 w-screen lg:w-auto h-fit relative flex transition-all justify-center items-center space-x-2 before:absolute before:-bottom-1.5 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
+              class="focus:outline-[#DCC1AB] p-2 w-screen xl:w-auto h-fit relative flex transition-all justify-center items-center space-x-2 before:absolute before:-bottom-1.5 before:left-0 before:content-[''] before:w-0 before:h-1 before:bg-project-beige hover:before:w-full before:transition-all"
             >
               <div
                 id="search-bar"
                 class="overflow-hidden invisible w-0 opacity-0 delay-0 transition-all duration-1000"
               >
                 <input
-                  class="p-1 h-7 rounded-lg transition-colors outline-0"
+                  class="p-1 h-7 rounded-xl transition-colors outline-0"
                   placeholder="Szukaj tutaj..."
                   type="search"
                 />
@@ -257,59 +258,65 @@
     </nav>
 
     <section
-      class="flex transition-all w-screen lg:w-auto lg:flex-row flex-col items-center justify-center lg:h-screen bg-project-beige text-project-black"
+      class="flex transition-all p-0 w-screen xl:w-auto xl:flex-row flex-col items-center justify-center xl:h-screen 2xl:h-screen bg-project-beige text-project-black"
       id="intro"
     >
-      <div class="p-20 w-full">
-        <h1
-          class="lg:text-6xl text-4xl lg:leading-[70px] lg:text-left text-center font-medium"
-          id="slider-header"
-        >
-          Nowoczesna <br />aranżacja <br />Twojego ogrodu
-        </h1>
-        <p
-          id="slider-desc"
-          class="mt-11 lg:w-[462px] w-fit lg:text-left text-center text-[16px] leading-[150%] font-['Inter']"
-        >
-          Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-          realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
-          podejściem do każdego projektu.
-        </p>
+      <div
+        class="w-full flex p-20 xl:p-0 flex-col justify-center max-h-screen items-center"
+      >
         <div
-          class="flex lg:flex-row flex-col font-['Inter'] items-center mt-20 lg:space-x-10"
+          class="xl:w-[600px] w-full 2xl:w-full 2xl:pl-40 2xl:mr-[64px] xl:pr-20"
         >
-          <div>
-            <a
-              class="bg-project-green py-3 px-4 border-transparent text-project-button-text rounded-full hover:cursor-pointer hover:bg-transparent border hover:border-project-green hover:text-project-green transition-all"
-              >Skontaktuj się z nami</a
-            >
-          </div>
-          <div class="lg:mt-0 mt-8">
-            <a
-              class="flex lg:flex-row flex-col font-normal py-3 px-4 justify-center items-center bg-transparent border border-project-green text-project-green rounded-full hover:cursor-pointer hover:bg-opacity-90 transition-all hover:bg-project-green hover:text-project-button-text"
-              href="javascript: scrollToSection('projects-section')"
-              >Zobacz nasze realizacje
-              <svg
-                class="ml-2"
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          <h1
+            class="font-display xl:text-6xl 2xl:text-[5rem] 2xl:leading-[5.5rem] text-4xl xl:leading-[70px] xl:text-left text-center font-medium"
+            id="slider-header"
+          >
+            Nowoczesna <br />aranżacja <br />Twojego ogrodu
+          </h1>
+          <p
+            id="slider-desc"
+            class="mt-11 xl:w-[462px] 2xl:w-[600px] w-fit xl:text-left text-center text-xl font-medium text-project-black leading-[150%] font-['Inter']"
+          >
+            Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+            realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+            podejściem do każdego projektu.
+          </p>
+          <div
+            class="flex xl:flex-row flex-col font-['Inter'] items-center mt-20 xl:space-x-10"
+          >
+            <div>
+              <a
+                class="bg-project-green 2xl:text-xl 2xl:font-normal 2xl:px-5 2xl:py-[1.25rem] py-3.5 px-4 border-transparent text-project-button-text rounded-full hover:cursor-pointer hover:bg-transparent border hover:border-project-green hover:text-project-green transition-all"
+                >Skontaktuj się z nami</a
               >
-                <path
-                  d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
+            </div>
+            <div class="xl:mt-0 mt-8">
+              <a
+                class="flex 2xl:text-xl 2xl:font-normal xl:flex-row flex-col 2xl:px-5 2xl:py-4 font-normal py-3 px-4 justify-center items-center bg-transparent border border-project-green text-project-green rounded-full hover:cursor-pointer hover:bg-opacity-90 transition-all hover:bg-project-green hover:text-project-button-text"
+                href="javascript: scrollToSection('projects-section')"
+                >Zobacz nasze realizacje
+                <svg
+                  class="ml-2"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="relative overflow-hidden h-full w-full">
+      <div class="relative overflow-hidden w-full h-full">
         <img
           id="slider-image"
-          class="object-cover overflow-hidden w-full h-screen"
+          class="object-cover overflow-hidden w-full h-full"
           src="./assets/img/slider/slider-1.png"
           alt="Zdjęcie ogrodu"
         />
@@ -317,9 +324,10 @@
         <div class="absolute bottom-0 right-0 flex items-center justify-center">
           <div
             id="left-arrow"
-            class="cursor-pointer bg-[#F5F0EC] p-8 hover:bg-white/80 transition-all"
+            class="cursor-pointer bg-[#F5F0EC] p-8 2xl:p-12 hover:bg-white/80 transition-all"
           >
             <svg
+              class="2xl:scale-150"
               width="27"
               height="24"
               viewBox="0 0 27 24"
@@ -334,9 +342,10 @@
           </div>
           <div
             id="right-arrow"
-            class="cursor-pointer bg-[#F5F0EC] p-8 hover:bg-white/80 transition-all"
+            class="cursor-pointer bg-[#F5F0EC] p-8 2xl:p-12 hover:bg-white/80 transition-all"
           >
             <svg
+              class="2xl:scale-150"
               width="27"
               height="24"
               viewBox="0 0 27 24"
@@ -354,15 +363,15 @@
     </section>
 
     <section
-      class="flex font-[Inter] lg:p-24 p-12 text-center lg:text-left w-screen lg:w-full flex-col items-center text-project-black bg-[#F5F0EC]"
+      class="flex font-[Inter] xl:p-24 p-12 text-center xl:text-left w-screen xl:w-full flex-col items-center text-project-black bg-[#F5F0EC]"
       id="offer-section"
     >
-      <div class="lg:w-4/6">
+      <div class="xl:w-4/6">
         <p class="text-project-green text-[12px]">Oferta</p>
         <h2 class="text-5xl mt-5 font-medium">
           Działamy <span class="italic">kompleksowo</span>
         </h2>
-        <p class="mt-6 text-lg">
+        <p class="mt-6 text-xl">
           Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
           nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla
           Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
@@ -370,10 +379,10 @@
         </p>
       </div>
       <div
-        class="flex lg:items-start justify-between items-center text-left gap-16 flex-col lg:flex-row mt-16"
+        class="flex xl:items-start justify-between items-center text-left gap-16 flex-col xl:flex-row mt-16"
       >
         <div
-          class="py-10 px-9 lg:w-[378px] lg:h-[370px] w-auto bg-white rounded-3xl"
+          class="py-10 px-9 xl:w-[378px] xl:h-[370px] w-auto bg-white rounded-3xl"
         >
           <img src="./assets/img/icon-projects.svg" alt="Ikona projektów" />
           <p
@@ -393,7 +402,7 @@
           </button>
         </div>
         <div
-          class="py-10 px-9 lg:w-[378px] lg:h-[370px] w-auto bg-white rounded-3xl"
+          class="py-10 px-9 xl:w-[378px] xl:h-[370px] w-auto bg-white rounded-3xl"
         >
           <img
             src="./assets/img/icon-visualizations.svg"
@@ -416,7 +425,7 @@
           </button>
         </div>
         <div
-          class="py-10 px-9 lg:w-[378px] lg:h-[370px] w-auto bg-white rounded-3xl"
+          class="py-10 px-9 xl:w-[378px] xl:h-[370px] w-auto bg-white rounded-3xl"
         >
           <img
             src="./assets/img/icon-realizations.svg"
@@ -442,13 +451,17 @@
     </section>
 
     <section
-      class="flex lg:flex-row flex-col lg:text-left text-center items-center lg:gap-16 font-[Inter] justify-center lg:h-screen bg-project-green text-[#F5F0EC]"
+      class="flex xl:flex-row flex-col xl:text-left text-center items-center xl:gap-16 font-[Inter] justify-center xl:h-screen bg-project-green text-[#F5F0EC]"
       id="about-company"
     >
       <div id="image" class="relative overflow-hidden h-full w-full">
-        <img class="object-cover" src="./assets/img/company.png" alt="" />
+        <img
+          class="object-cover h-full w-full"
+          src="./assets/img/company.png"
+          alt=""
+        />
       </div>
-      <div class="lg:p-20 p-16 w-full">
+      <div class="xl:p-20 p-16 w-full">
         <p class="text-xs">O firmie</p>
         <h2
           class="font-display mt-4 leading-tight -tracking-normal text-5xl font-medium"
@@ -464,7 +477,7 @@
           współczesnego trybu życia.
         </p>
         <button
-          class="transition-all flex mx-auto lg:mx-0 lg:mt-20 mt-16 space-x-2 items-center border py-3 px-4 rounded-full hover:bg-white hover:text-project-green"
+          class="transition-all flex mx-auto xl:mx-0 xl:mt-20 mt-16 space-x-2 items-center border py-3 px-4 rounded-full hover:bg-white hover:text-project-green"
         >
           <span>Poznaj nas bliżej</span>
           <svg
@@ -551,19 +564,19 @@
 
     <section
       id="instagram-section"
-      class="text-center lg:text-left lg:my-16 font-display text-white"
+      class="text-center xl:text-left xl:my-16 font-display text-white"
     >
       <div
-        class="lg:w-3/4 mx-auto lg:py-32 p-10 lg:px-28 bg-project-green flex lg:flex-row flex-col justify-around"
+        class="xl:w-3/4 mx-auto xl:py-32 p-10 xl:px-28 bg-project-green flex xl:flex-row flex-col justify-around"
       >
         <h2
-          class="lg:text-[40px] block w-full leading-[1.2] text-lg font-normal"
+          class="xl:text-[40px] block w-full leading-[1.2] text-xl font-normal"
         >
           Zostańmy w kontakcie! <br />Znajdziesz nas na
           <span class="italic font-medium">Instagramie</span>.
         </h2>
-        <div class="lg:w-1/4">
-          <p class="lg:mt-0 mt-2">
+        <div class="xl:w-1/4">
+          <p class="xl:mt-0 mt-2">
             Śledź nasze <br />
             najnowsze realizacje!
           </p>
@@ -577,12 +590,12 @@
     </section>
 
     <footer
-      class="bg-project-black w-screen lg:w-auto text-[#F5F0EC] font-[Inter]"
+      class="bg-project-black w-screen xl:w-auto text-[#F5F0EC] font-[Inter]"
     >
       <div class="py-20 w-3/4 mx-auto">
-        <div class="flex lg:flex-row flex-col justify-between border-b-2 pb-16">
+        <div class="flex xl:flex-row flex-col justify-between border-b-2 pb-16">
           <svg
-            class="lg:self-auto self-center"
+            class="xl:self-auto self-center"
             width="115"
             height="20"
             viewBox="0 0 115 20"
@@ -635,8 +648,8 @@
             />
           </svg>
 
-          <div class="flex lg:flex-row flex-col gap-6 items-center">
-            <p class="lg:mt-0 mt-3 lg:text-left text-center">
+          <div class="flex xl:flex-row flex-col gap-6 items-center">
+            <p class="xl:mt-0 mt-3 xl:text-left text-center">
               Daj znać, co możemy dla Ciebie zrobić!
             </p>
             <button
@@ -649,7 +662,7 @@
 
         <div class="mt-16 flex justify-between">
           <div
-            class="flex lg:border-0 border-r-2 lg:pr-0 pr-3.5 lg:flex-row flex-col gap-12"
+            class="flex xl:border-0 border-r-2 xl:pr-0 pr-3.5 xl:flex-row flex-col gap-12"
           >
             <a href="#" class="hover:text-project-green transition-colors"
               >Kontakt</a
@@ -673,7 +686,7 @@
               >LinkedIn</a
             >
           </div>
-          <div class="flex lg:flex-row flex-col gap-12">
+          <div class="flex xl:flex-row flex-col gap-12">
             <a
               class="hover:text-project-green transition-colors"
               href="tel:000000000"
@@ -688,10 +701,10 @@
         </div>
 
         <div
-          class="mt-[120px] flex lg:flex-row flex-col items-center justify-between"
+          class="mt-[120px] flex xl:flex-row flex-col items-center justify-between"
         >
           <div>Prawa zastrzeżone &copy; <span id="footer-year">2023</span></div>
-          <div class="flex gap-4 lg:mt-0 mt-2">
+          <div class="flex gap-4 xl:mt-0 mt-2">
             <p>made by</p>
             <a
               target="_blank"

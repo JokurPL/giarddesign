@@ -18,8 +18,8 @@ const data = [
   },
   {
     id: 1,
-    header: "Suspendisse ac convallis",
-    desc: "Sed congue erat rutrum, laoreet nisi dictum, semper dolor. Nullam vel egestas sem. Curabitur ac pharetra nisi. Fusce quis faucibus turpis, eget porttitor enim. Duis eu pharetra tellus. Nulla ac sollicitudin tellus. Vestibulum vitae vulputate turpis.",
+    header: "Sed congue \n erat rutrum",
+    desc: "Suspendisse ac convallis, laoreet nisi dictum, semper dolor. Nullam vel egestas sem. Curabitur ac pharetra nisi. Fusce quis faucibus turpis, eget porttitor enim.",
     img: "slider-2.jpg",
     copyright:
       "Zdjęcie dodane przez Tina Nord: https://www.pexels.com/pl-pl/zdjecie/fotografia-lotnicza-szarego-domu-1590336/",
@@ -27,8 +27,8 @@ const data = [
   },
   {
     id: 2,
-    header: "Vestibulum ante ipsum",
-    desc: "Cras sollicitudin molestie mauris, in vestibulum ex consequat ac. Nunc tincidunt velit lectus, pretium aliquam mauris condimentum in. Ut egestas odio purus, non rhoncus orci luctus non. Phasellus posuere pellentesque orci, quis dictum lorem placerat ac. Aliquam a tellus metus. Aenean vel massa at mi tincidunt luctus eu vitae massa. Ut tincidunt placerat leo.",
+    header: "Vestibulum \n ante ipsum",
+    desc: "Cras sollicitudin molestie mauris, in vestibulum ex consequat ac. Nunc tincidunt velit lectus, pretium aliquam mauris condimentum in. Ut egestas odio purus, non rhoncus orci luctus non. Phasellus posuere pellentesque orci, quis dictum lorem placerat ac.",
     img: "slider-3.jpg",
     alt: "Zdjęcie natury w słoiku",
     copyright:
@@ -37,7 +37,7 @@ const data = [
 ];
 
 const changeSlide = (header, img, desc, alt, copyright) => {
-  sliderContainer.classList.add("opacity-0");
+  sliderContainer.classList.add("opacity-30");
 
   setTimeout(() => {
     sliderHeader.innerText = header;
@@ -45,7 +45,7 @@ const changeSlide = (header, img, desc, alt, copyright) => {
     sliderImg.alt = alt;
     sliderDesc.innerText = desc;
     sliderImgCopyright.innerText = copyright;
-    sliderContainer.classList.remove("opacity-0");
+    sliderContainer.classList.remove("opacity-30");
   }, 300);
 };
 
@@ -64,9 +64,6 @@ leftArrow.addEventListener("click", () => {
 });
 
 rightArrow.addEventListener("click", () => {
-  sliderContainer.classList.add("bg-gray");
-
-  console.log(currentId);
   currentId += 1;
   if (currentId >= data.length) currentId = 0;
   changeSlide(
