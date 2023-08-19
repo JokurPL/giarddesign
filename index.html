@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="/assets/css/build.css" rel="stylesheet" />
     <title>GiardDesign</title>
     <meta
       name="description"
@@ -11,7 +11,38 @@
     realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
     podejściem do każdego projektu."
     />
-    <!-- <link href="/output.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+
+    <style>
+      ::-webkit-scrollbar {
+        width: 0.8em;
+      }
+
+      #project-container img {
+        z-index: -9999;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #e6e3e3;
+        border-left: 3px solid #c3a48a;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #dcc1ab;
+        border-left: 3px solid #c3a48a;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #c3a48a;
+      }
+    </style>
   </head>
   <body>
     <div
@@ -279,7 +310,7 @@
         <img
           id="slider-image"
           class="object-cover overflow-hidden w-full h-screen"
-          src="../public/images/slider/slider-1.png"
+          src="/assets/img/slider/slider-1.png"
           alt="Zdjęcie ogrodu"
         />
         <span id="slider-img-copyright" class="hidden"></span>
@@ -344,7 +375,7 @@
         <div
           class="py-10 px-9 lg:w-[378px] lg:h-[370px] w-auto bg-white rounded-3xl"
         >
-          <img src="../public/images/icon-projects.svg" alt="Ikona projektów" />
+          <img src="/assets/img/icon-projects.svg" alt="Ikona projektów" />
           <p
             class="font-display font-medium tracking-tighter text-2xl mt-5 leading-tight"
           >
@@ -358,17 +389,14 @@
             class="relative flex space-x-3 items-center cursor-pointer text-project-green mt-24 before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-44 before:h-[1px] before:bg-project-green before:transition-all hover:translate-x-2 transition-all"
           >
             <span>Dowiedz się więcej</span>
-            <img
-              src="../public/images/right-arrow.svg"
-              alt="Strzałka w prawo"
-            />
+            <img src="/assets/img/right-arrow.svg" alt="Strzałka w prawo" />
           </button>
         </div>
         <div
           class="py-10 px-9 lg:w-[378px] lg:h-[370px] w-auto bg-white rounded-3xl"
         >
           <img
-            src="../public/images/icon-visualizations.svg"
+            src="/assets/img/icon-visualizations.svg"
             alt="Ikona wizualizacji"
           />
           <p
@@ -384,19 +412,13 @@
             class="relative flex space-x-3 items-center cursor-pointer text-project-green mt-24 before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-44 before:h-[1px] before:bg-project-green before:transition-all hover:translate-x-2 transition-all"
           >
             <span>Dowiedz się więcej</span>
-            <img
-              src="../public/images/right-arrow.svg"
-              alt="Strzałka w prawo"
-            />
+            <img src="/assets/img/right-arrow.svg" alt="Strzałka w prawo" />
           </button>
         </div>
         <div
           class="py-10 px-9 lg:w-[378px] lg:h-[370px] w-auto bg-white rounded-3xl"
         >
-          <img
-            src="../public/images/icon-realizations.svg"
-            alt="Ikona realizacji"
-          />
+          <img src="/assets/img/icon-realizations.svg" alt="Ikona realizacji" />
           <p
             class="font-display font-medium tracking-tighter text-2xl mt-5 leading-tight"
           >
@@ -410,10 +432,7 @@
             class="relative flex space-x-3 items-center cursor-pointer text-project-green mt-24 before:absolute before:-bottom-1 before:left-0 before:content-[''] before:w-44 before:h-[1px] before:bg-project-green before:transition-all hover:translate-x-2 transition-all"
           >
             <span>Dowiedz się więcej</span>
-            <img
-              src="../public/images/right-arrow.svg"
-              alt="Strzałka w prawo"
-            />
+            <img src="/assets/img/right-arrow.svg" alt="Strzałka w prawo" />
           </button>
         </div>
       </div>
@@ -424,7 +443,7 @@
       id="about-company"
     >
       <div id="image" class="relative overflow-hidden h-full w-full">
-        <img class="object-cover" src="../public/images/company.png" alt="" />
+        <img class="object-cover" src="/assets/img/company.png" alt="" />
       </div>
       <div class="lg:p-20 p-16 w-full">
         <p class="text-xs">O firmie</p>
@@ -475,47 +494,47 @@
         class="w-full overflow-hidden !transition-[max-height] !duration-[1500ms] max-h-[85rem] relative opacity-0 before:bg-gradient-to-t z-0 before:z-10 before:from-project-beige before:content-[''] before:absolute before:w-full before:h-[1000px] before:bottom-0"
       >
         <img
-          src="../public/images/projects/Photo-1.png"
+          src="/assets/img/projects/Photo-1.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects/Photo-2.png"
+          src="/assets/img/projects/Photo-2.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects/Photo-3.png"
+          src="/assets/img/projects/Photo-3.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects/Photo-4.png"
+          src="/assets/img/projects/Photo-4.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects/Photo-5.png"
+          src="/assets/img/projects/Photo-5.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects/Photo-6.png"
+          src="/assets/img/projects/Photo-6.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects/Photo-7.png"
+          src="/assets/img/projects/Photo-7.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects/Photo-8.png"
+          src="/assets/img/projects/Photo-8.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
 
         <img
-          src="../public/images/projects/Photo-9.png"
+          src="/assets/img/projects/Photo-9.png"
           alt="Zdjęcie zrealizowanego projektu"
         />
       </div>
@@ -799,9 +818,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
-    <script src="/js/index.js"></script>
-    <script src="/js/gallery.js"></script>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/slider.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/gallery.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/slider.js"></script>
   </body>
 </html>

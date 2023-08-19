@@ -41,7 +41,7 @@ const changeSlide = (header, img, desc, alt, copyright) => {
 
   setTimeout(() => {
     sliderHeader.innerText = header;
-    sliderImg.src = `../public/images/slider/${img}`;
+    sliderImg.src = `/assets/img/slider/${img}`;
     sliderImg.alt = alt;
     sliderDesc.innerText = desc;
     sliderImgCopyright.innerText = copyright;

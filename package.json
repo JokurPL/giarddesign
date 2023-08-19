@@ -5,14 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch"
+    "start": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
   }
 }
