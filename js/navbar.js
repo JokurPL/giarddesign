@@ -39,17 +39,15 @@ const search = () => {
 const expandMenu = () => {
   const menuContent = document.getElementById("menu-content");
   menuContent.classList.remove("invisible");
-  menuContent.classList.remove("opacity-0");
-  menuContent.classList.remove("h-0");
-  menuContent.classList.add("h-[14rem]");
+  menuContent.classList.remove("max-h-0");
+  menuContent.classList.add("max-h-[18.5rem]");
 };
 
 const rollUpMenu = () => {
   const menuContent = document.getElementById("menu-content");
   menuContent.classList.add("invisible");
-  menuContent.classList.add("opacity-0");
-  menuContent.classList.add("h-0");
-  menuContent.classList.remove("h-[14rem]");
+  menuContent.classList.add("max-h-0");
+  menuContent.classList.remove("max-h-[18.5rem]");
 };
 
 const responsiveMenu = () => {
