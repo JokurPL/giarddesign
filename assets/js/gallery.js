@@ -37,6 +37,13 @@ const gallery = (containerId) => {
         },
         columns: 3,
       },
+      1920: {
+        margin: {
+          x: 30,
+          y: 30,
+        },
+        columns: 3,
+      },
     },
   });
 
