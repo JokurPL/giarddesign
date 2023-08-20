@@ -56,7 +56,7 @@ const changeSlide = (header, img, desc, alt, copyright, direction) => {
     } else {
       sliderContainer.classList.remove("animate-fade-right");
     }
-  }, 710);
+  }, 700);
 };
 
 let currentId = 0;

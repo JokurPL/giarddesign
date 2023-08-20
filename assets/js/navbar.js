@@ -27,12 +27,9 @@ const search = () => {
   const searchIcon = document.getElementById("search-icon");
   const searchBar = document.getElementById("search-bar");
   searchIcon.addEventListener("click", () => {
-    searchBar.classList.remove("invisible");
-    searchBar.classList.remove("w-0");
-    searchBar.classList.remove("delay-0");
+    searchBar.classList.remove("max-w-0");
     searchBar.classList.remove("opacity-0");
-    searchBar.classList.add("delay-300");
-    searchBar.classList.add("opacity-100");
+    searchBar.classList.add("max-w-[30rem]");
   });
 };
 
