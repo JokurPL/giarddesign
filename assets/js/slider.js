@@ -37,16 +37,16 @@ const data = [
 ];
 
 const changeSlide = (header, img, desc, alt, copyright) => {
-  sliderContainer.classList.add("opacity-30");
+  sliderContainer.classList.add("animate-fade-up");
 
+  sliderHeader.innerText = header;
+  sliderImg.src = `./assets/img/slider/${img}`;
+  sliderImg.alt = alt;
+  sliderDesc.innerText = desc;
+  sliderImgCopyright.innerText = copyright;
   setTimeout(() => {
-    sliderHeader.innerText = header;
-    sliderImg.src = `./assets/img/slider/${img}`;
-    sliderImg.alt = alt;
-    sliderDesc.innerText = desc;
-    sliderImgCopyright.innerText = copyright;
-    sliderContainer.classList.remove("opacity-30");
-  }, 300);
+    sliderContainer.classList.remove("animate-fade-up");
+  }, 500);
 };
 
 let currentId = 0;

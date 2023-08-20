@@ -17,6 +17,21 @@ module.exports = {
       screens: {
         "3xl": "1920px",
       },
+      keyframes: {
+        "fade-up": {
+          "0%": {
+            opacity: "0.4",
+            transform: "translateY(1rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        "fade-up": "fade-up .5s both",
+      },
     },
   },
   plugins: [],
