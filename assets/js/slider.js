@@ -43,8 +43,6 @@ const changeSlide = (header, img, desc, alt, copyright, direction) => {
     sliderContainer.classList.add("animate-fade-right");
   }
 
-  console.log(`animate-fade-${direction === "left" ? "left" : "right"}`);
-
   sliderHeader.innerText = header;
   sliderImg.src = `./assets/img/slider/${img}`;
   sliderImg.alt = alt;
