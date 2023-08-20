@@ -18,19 +18,30 @@ module.exports = {
         "3xl": "1920px",
       },
       keyframes: {
-        "fade-up": {
+        "fade-left": {
           "0%": {
-            opacity: "0.4",
-            transform: "translateY(1rem)",
+            opacity: "0.5",
+            transform: "translateX(-3rem)",
           },
           "100%": {
             opacity: "1",
-            transform: "translateY(0)",
+            transform: "translateX(0)",
+          },
+        },
+        "fade-right": {
+          "0%": {
+            opacity: "0.5",
+            transform: "translateX(3rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
           },
         },
       },
       animation: {
-        "fade-up": "fade-up .5s both",
+        "fade-left": "fade-left .7s both",
+        "fade-right": "fade-right .7s both",
       },
     },
   },

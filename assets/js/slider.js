@@ -1,4 +1,4 @@
-const sliderContainer = document.getElementById("intro");
+const sliderContainer = document.getElementById("slider");
 
 const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
@@ -36,8 +36,14 @@ const data = [
   },
 ];
 
-const changeSlide = (header, img, desc, alt, copyright) => {
-  sliderContainer.classList.add("animate-fade-up");
+const changeSlide = (header, img, desc, alt, copyright, direction) => {
+  if (direction === "left") {
+    sliderContainer.classList.add("animate-fade-left");
+  } else {
+    sliderContainer.classList.add("animate-fade-right");
+  }
+
+  console.log(`animate-fade-${direction === "left" ? "left" : "right"}`);
 
   sliderHeader.innerText = header;
   sliderImg.src = `./assets/img/slider/${img}`;
@@ -45,8 +51,12 @@ const changeSlide = (header, img, desc, alt, copyright) => {
   sliderDesc.innerText = desc;
   sliderImgCopyright.innerText = copyright;
   setTimeout(() => {
-    sliderContainer.classList.remove("animate-fade-up");
-  }, 500);
+    if (direction === "left") {
+      sliderContainer.classList.remove("animate-fade-left");
+    } else {
+      sliderContainer.classList.remove("animate-fade-right");
+    }
+  }, 710);
 };
 
 let currentId = 0;
@@ -59,7 +69,8 @@ leftArrow.addEventListener("click", () => {
     data[currentId].img,
     data[currentId].desc,
     data[currentId].alt,
-    data[currentId].copyright
+    data[currentId].copyright,
+    "left"
   );
 });
 
@@ -70,6 +81,8 @@ rightArrow.addEventListener("click", () => {
     data[currentId].header,
     data[currentId].img,
     data[currentId].desc,
-    data[currentId].alt
+    data[currentId].alt,
+    data[currentId].copyright,
+    "right"
   );
 });
