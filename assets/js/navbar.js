@@ -42,7 +42,6 @@ const expandMenu = () => {
 
 const rollUpMenu = () => {
   const menuContent = document.getElementById("menu-content");
-  menuContent.classList.add("invisible");
   menuContent.classList.add("max-h-0");
   menuContent.classList.remove("max-h-[18.5rem]");
 };
